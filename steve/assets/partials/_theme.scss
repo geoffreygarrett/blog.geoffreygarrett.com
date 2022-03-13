@@ -1,0 +1,40 @@
+@import "vars";
+
+html, html[data-theme="light"] {
+		--light-text-color: #ccc;
+  		--link-color: #ccc;
+	    --border-color: #ccc;
+  		--main-background-color: #ccc;
+  		--main-text-color: #ccc;
+		--accent-color: $primary-color;
+}
+
+html[data-theme="dark"] {
+		--light-text-color: #ccc;
+  		--link-color: #ccc;
+	    --border-color: #ccc;
+  		--main-background-color: #ccc;
+  		--main-text-color: #ccc;
+		--accent-color: $primary-color;
+	}
+
+@media (prefers-color-scheme: dark) {
+	html, html[data-theme="light"] {
+			--light-text-color: #123;
+			--link-color: #123;
+			--border-color: #123;
+			--main-background-color: #123;
+			--main-text-color: #123;
+			--accent-color: $primary-color;
+	}
+
+	html[data-theme="dark"] {
+			--light-text-color: #ccc;
+			--link-color: #ccc;
+			--border-color: #ccc;
+			--main-background-color: #ccc;
+			--main-text-color: #ccc;
+			--accent-color: $primary-color;
+		}
+}
+
