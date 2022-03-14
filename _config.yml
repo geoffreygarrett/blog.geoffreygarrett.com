@@ -23,7 +23,7 @@ timezone: Europe/Amsterdam
 
 title: Geoffrey's Blog                          # the main title
 
-tagline: Per Aspera ad Astra   # it will display as the sub-title
+tagline: PER ASPERA AD ASTRA   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Researching machine learning in autonomous exploration of small celestial bodies. Merging intelligence and space exploration in service of progress.
