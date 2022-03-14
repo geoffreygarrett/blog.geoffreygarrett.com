@@ -16,26 +16,26 @@ lang: en
 prefer_datetime_locale:
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Europe/Amsterdam
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: Geoffrey's Blog                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Aerospace Engineer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  Researching machine learning in autonomous exploration of small celestial bodies. Merging intelligence and space exploration in service of progress.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
 
 github:
-  username: github_username             # change to your github username
+  username: geoffreygarrett             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+#twitter:
+#  username: twitter_username            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -44,7 +44,7 @@ social:
   email: geoffreygarrett99@gmail.com              # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
+#    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/geoffreygarrett       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "https://avatars.githubusercontent.com/u/26066340?s=400&u=0666bce37af1520c11fc77b1c3d63c345a9fe66f&v=4"
 
 # boolean type, the global switch for ToC in posts.
 toc: true
