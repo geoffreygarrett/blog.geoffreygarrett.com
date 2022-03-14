@@ -1,7 +1,7 @@
 ---
-layout: page
-title:  "Test"
-permalink: "/test/"
+layout: page2
+title:  "asd"
+permalink: "/asd/"
 ---
 
 <figure>

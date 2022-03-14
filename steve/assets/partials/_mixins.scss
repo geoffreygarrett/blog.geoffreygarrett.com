@@ -19,6 +19,7 @@ $theme-map: null;
     // use & for making the theme class ancestor of the class
     // from which you use @include theme() {...}
     .#{$theme} & {
+      @user-profile;
       @content; // the content inside @include theme() {...}
     }
   }

@@ -2,12 +2,18 @@
 ---
 
 @import "vars", "reset", "mixins", "theme", "button";
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 button {
   color: var(--link-color);
   margin-right: auto;
   margin-left: right;
   display: block;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-background-color);
 }
 
 //html {
@@ -84,7 +90,7 @@ button {
       padding: 15px 0;
       border: 1px solid var(--border-color);
       border-top: none;
-      background: var(--main-background-color);
+      background: var(--main-background-color) !important;
       box-shadow: 0 2px 3px rgba($black, .05);
       @include transition(all .1s ease);
 
@@ -120,7 +126,7 @@ button {
         @include justify-content();
         width: 40px;
         height: 40px;
-        background: darken($grey-color-lightest, 6%);
+        background: hsl(var(--border-color), -6%);
         border-radius: 50%;
         @include transition(all .1s ease);
 
@@ -129,7 +135,7 @@ button {
         }
 
         svg * {
-          fill: $white;
+          fill: var(--main-background-color);
         }
       }
     }
@@ -213,8 +219,8 @@ button {
     position: relative;
     margin: 0 0 20px;
     border: 1px solid var(--border-color);
-    background: $white;
-    box-shadow: 0 2px 3px rgba($black, .05), inset 6px 0 0 $grey-color-lightest;
+    background: var(--main-background-color);
+    box-shadow: 0 2px 3px rgba($black, .05), inset 6px 0 0 var(--border-color);
     @include placeholder($grey-color-lighter, italic);
 
     & > div {
@@ -228,7 +234,7 @@ button {
         min-height: 55px;
         line-height: 55px;
         color: $grey-color-lighter;
-        background: $white;
+        background: var(--main-background-color);
         letter-spacing: 0.05em;
         font-size: 11px;
         text-transform: uppercase;
@@ -272,7 +278,7 @@ button {
           position: relative;
           display: block;
           padding: 15px 15px 15px 35px;
-          background: $background-color;
+          background: var(--main-background-color);
           box-shadow: 0 -1px 0 $grey-color-lightest;
           @include transition(background .1s ease);
 
@@ -280,7 +286,7 @@ button {
             position: absolute;
             top: 50%;
             left: 15px;
-            background: $grey-color-normal;
+            background: var(--main-background-color);
             content: "";
             width: 5px;
             height: 5px;
@@ -289,7 +295,7 @@ button {
           }
 
           &:hover {
-            background: $white;
+            background: var(--main-background-color);
           }
         }
       }
@@ -300,8 +306,8 @@ button {
     position: relative;
     margin: 40px 0 0;
     padding: 40px 40px 80px;
-    border: 1px solid $grey-color-lightest;
-    background: $white;
+    border: 1px solid var(--border-color);
+    background: var(--main-background-color);
     box-shadow: 0 2px 3px rgba($black, .05);
 
     &.page {
@@ -456,7 +462,7 @@ button {
         top: 50%;
         border: none;
         font-weight: 400;
-        color: darken($grey-color-lightest, 8%);
+        color: hsl(var(--border-color), -5%);
         font-size: 24px;
         @include transition(color .1s linear);
         @include translate(0, -50%);
@@ -490,7 +496,7 @@ button {
             font-size: 14px;
             padding: 3px 6px;
             background: var(--main-background-color);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--main-background-color);
           }
         }
       }
@@ -510,7 +516,7 @@ button {
           & > code {
             font-size: 14px;
             padding: 3px 6px;
-            background: $background-color;
+            background: var(--main-background-color);
             border: 1px solid var(--border-color);
           }
         }
@@ -528,7 +534,7 @@ button {
         & > code {
           font-size: 14px;
           padding: 3px 6px;
-          background: $background-color;
+          background: var(--main-background-color);
           border: 1px solid var(--border-color);
         }
       }
@@ -565,7 +571,7 @@ button {
       left: 0;
       width: 100%;
       border-top: 1px solid var(--border-color);
-      background: lighten($grey-color-lightest, 5%);
+      background: hsl(var(--border-color), 5%);
       box-shadow: inset 0 10px 10px -9px rgba($black, .08);
 
       div {
@@ -585,11 +591,11 @@ button {
           cursor: pointer;
 
           &:hover {
-            background-color: $white;
+            background-color: var(--main-background-color);
           }
 
           &.active {
-            background-color: $white;
+            background-color: var(--main-background-color);
 
             .social-networks {
               @include flexbox();
@@ -602,16 +608,16 @@ button {
             top: -48px;
             left: 50%;
             width: 100px;
-            box-shadow: 0 0 0 1px $grey-color-lightest, 0 3px 4px rgba($black, .05);
+            box-shadow: 0 0 0 1px var(--border-color), 0 3px 4px rgba($black, .05);
             @include translate(-50%, 0);
 
             li {
               position: relative;
               width: 50%;
               min-height: 50px;
-              background: $white;
+              background: var(--main-background-color);
               text-align: center;
-              box-shadow: inset 1px 0 0 $grey-color-lightest;
+              box-shadow: inset 1px 0 0 var(--border-color);
               @include transition(background .1s ease);
 
               &:first-of-type {
@@ -627,7 +633,7 @@ button {
               }
 
               &:hover a svg {
-                fill: $white;
+                fill: var(--main-background-color);
               }
 
               a {
@@ -662,13 +668,13 @@ button {
 
               a {
                 color: $grey-color-light;
-                background: $grey-color-lightest;
+                background: var(--border-color);
                 padding: 4px 10px;
                 border-radius: 18px;
                 @include transition(background .1s ease);
 
                 &:hover {
-                  background: darken($grey-color-lightest, 4%);
+                  background: hsl(var(--border-color), -4%);
                 }
               }
             }
@@ -683,7 +689,7 @@ button {
     margin: 40px 0 0;
     padding: 40px;
     border: 1px solid var(--border-color);
-    background: $white;
+    background: var(--main-background-color);
     box-shadow: 0 2px 3px rgba($black, .05);
   }
 
@@ -700,7 +706,7 @@ button {
     .previous, .next {
       padding: 14px 20px;
       border: 1px solid var(--border-color);
-      background: $white;
+      background: var(--main-background-color);
       box-shadow: 0 2px 3px rgba($black, .05);
       text-transform: uppercase;
       font-size: 14px;
@@ -709,7 +715,7 @@ button {
 
       &:hover {
         background: var(--accent-color);
-        color: $white;
+        color: var(--main-background-color);
       }
     }
 

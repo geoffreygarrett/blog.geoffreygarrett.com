@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-03-11 23:56
-title:  "Sample Data"
+title:  "Sample Data Test"
 mood: happy
 category: 
 - docs

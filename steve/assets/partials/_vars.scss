@@ -53,10 +53,11 @@ $light-mode-accent: #56add9;
 //body {
 //  font: 16px 'Open Sans', sans-serif;
 //}
-//
-//body .gist .gist-file {
-//  border-color: #555 #555 #444 !important;
-//}
+
+body .gist .gist-file {
+  background: var(--main-background-color) !important;
+  border-color: #555 #555 #444 !important;
+}
 //
 //body .gist .gist-data {
 //  border-color: #555 !important;

@@ -7,6 +7,13 @@
     </div>
 
     <div class="compact-header">
+        <a class="dark-mode-button" >
+          <i id="theme-toggle" class="fa fa-moon" onclick="modeSwitcher()"></i>
+          <span id="dark-text">Sunset</span>
+        </a>
+
+<!--        <button href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;" ></button>-->
+
         <a class="avatar" href="{{ site.baseurl | prepend: site.url }}"><img alt="Avatar" src="{% if site.avatar %}{{site.avatar}}{% else %}{{ site.email | to_gravatar:140 }}{% endif %}" /></a>
         <div class="my-info">
             <strong class="my-name">{{ site.name }}</strong>

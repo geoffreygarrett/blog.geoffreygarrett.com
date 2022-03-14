@@ -26,3 +26,5 @@ end
 platforms :mswin do
   gem "wdm", :group => [:development, :test]
 end
+
+gem 'font-awesome-sass'
