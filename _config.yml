@@ -29,7 +29,7 @@ description: >-                        # used by seo meta and the atom feed
   Researching machine learning in autonomous exploration of small celestial bodies. Merging intelligence and space exploration in service of progress.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'http://blog.geoffreygarrett.com/'
 
 github:
   username: geoffreygarrett             # change to your github username
